@@ -28,32 +28,18 @@ ul {
 }
 
 button {
-    display:block;
     width:100%;
-    max-width: 460px;
     border-radius: 100px;
     border: none;
     background-color: #000;
     color: #FFFFFF;
-    padding: 10px 10px;
-}
-
-.hire-us, button {
-    margin-bottom: 26px;
-    margin-top: -14px;
+    padding: 10px 20px;
 }
 
 .scroll-down, button {
     margin-bottom: 26px;
     margin-top: 22px;
 }
-
-.block {
-    display: block;
-    border: none;
-    font-size: 13px;
-    text-align: center;
-  }
 
 .paragraph {
     font-size: 12px;
@@ -73,24 +59,20 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    color: #69696a;
-    text-decoration: none;
-}
-
 a:hover {
     color: blue;
 }
 
-a:active {
-    color: green;
-}
-
 @media only screen and (min-width: 768px) {
     ul {
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    li {
+        white-space: nowrap;
+        padding: 10px;
     }
 
     header {
@@ -101,5 +83,50 @@ a:active {
 
     nav {
         display: flex;
-        align-items: center;
+        flex-wrap: nowrap;
+        align-items: baseline;
     }
+
+    .paragraph {
+        display: flex;
+        margin-left: 0;
+        max-width: 50%;
+    }
+
+    .pinkDot {
+        height: 150px;
+        width: 150px;
+        background-color: pink;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px; right: 100px;
+        opacity: 75%;
+    }
+
+    .purpleDot {
+        height: 111px;
+        width: 111px;
+        background-color: purple;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px; right: 20px;
+        opacity: 75%;
+    }
+
+    .tanDot {
+        height: 140px;
+        width: 140px;
+        background-color: tan;
+        border-radius: 50%;
+        position: absolute;
+        top: 230px; right: 20px;
+        opacity: 75%;
+    }
+
+    .scrollButton {
+        position: absolute;
+        bottom: -10px; left: 45%; right: 45%;
+        max-width: 112px;
+        min-width: 112px;
+    }
+}
