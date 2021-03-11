@@ -79,6 +79,7 @@ a:hover {
 
     nav {
         display: flex;
+        flex-direction: row;
         align-items: baseline;
     }
 
@@ -102,33 +103,33 @@ a:hover {
         max-width: 50%;
     }
 
-    .pinkDot {
+    .largeDot {
         height: 150px;
         width: 150px;
-        background-color: pink;
+        background-color: rgba(247, 136, 167, 0.6);
         border-radius: 50%;
         position: absolute;
         top: 150px; right: 100px;
         opacity: 75%;
     }
 
-    .purpleDot {
-        height: 111px;
-        width: 111px;
-        background-color: purple;
-        border-radius: 50%;
-        position: absolute;
-        top: 150px; right: 20px;
-        opacity: 75%;
-    }
-
-    .tanDot {
+    .mediumDot {
         height: 140px;
         width: 140px;
-        background-color: tan;
+        background-color: rgba(247, 193, 162, 0.7);
         border-radius: 50%;
         position: absolute;
         top: 230px; right: 20px;
+        opacity: 75%;
+    }
+
+    .smallDot {
+        height: 111px;
+        width: 111px;
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        top: 150px; right: 20px;
         opacity: 75%;
     }
 
